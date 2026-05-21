@@ -1,5 +1,5 @@
 const GEMINI_KEY = import.meta.env.VITE_GEMINI_API_KEY
-const ENDPOINT = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_KEY}`
+const ENDPOINT = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_KEY}`
 
 export async function getGeminiInsight(summary, rangeType) {
   const prompt = `You are a sharp, direct productivity coach. Analyze this person's productivity data for the past ${rangeType} and respond in exactly this JSON format (no markdown, no extra text):
